@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <title>Graficado Onda</title>
+   
+    <link rel="stylesheet" href="view.css">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, ,minium-scale=1.0">
+ </head>
+ <link rel="stylesheet" href="view.css">
+ <body>
+    <header>
+        <div id="grf"></div>  
+    </header>
+     <aside>
+         <div class="contenedor">
+            <form id="format" action="" class="form">
+            <div class="form-header">
+                <h1 class="form-title">C<samp>lase de Campo</samp></h1>
+            </div>
+            <label for="clocamp" class="form-label">Clase de Campo</label>&nbsp;&nbsp;
+            <br>
+            <select name="num5" id="num5">
+            <br>
+            <option value="20">Campo Electrico</option><option value="21">Campo Magnetico</option>
+            </select> 
+            <br><br>
+            <label for="mag_camp" class="form-label">Magnitud de Campo</label>&nbsp;&nbsp;
+            <br>
+            <input type="text" name="mag_camp" id="mag_camp" placeholder="Por favor digite magnitud del Campo">
+            <p class="form-label">X 10 ^</p>
+            <input type="text" name="num_ele1" id="num_ele1" placeholder="Por favor a que numero sera elevado">
+        </div>
+     </aside>
+
+     <aside>
+        <div class="abste">
+           <div class="form">
+               <div class="form-header">
+                   <h1 class="form-title">G<samp>raficar</samp></h1>
+               </div>
+               <label for="clond" class="form-label">Clase de onda</label>&nbsp;&nbsp;
+               <select name="num2" id="num2">
+               <option value="0">Clase de Onda</option><option value="1">Ondas Gamma</option><option value="2">ondas tipo x</option><option value="3">Ondas Ultravioleta</option><option value="4">ondas Color Rojos</option>
+               <option value="5">Ondas Color Azul</option><option value="6">Ondas Color Verde</option><option value="7">Ondas Color Amarillo</option><option value="8">Ondas Tipo Infrarojos</option><option value="9">Ondas Tipo Microondas</option>
+               <option value="10">Ondas Tipo VHF</option><option value="11">Tipo Cortas</option><option value="12">Tipo Medias</option><option value="13">tipo Largas</option><option value="14">Radio</option>
+               <option value="15">Frecuencia Baja</option><option value="16">VHF</option><option value="17">Radar</option>
+               </select>      
+   
+               <div class="form-header">
+                   <h1 class="form-title">M<samp>odificar</samp></h1>
+               </div>
+               <label for="clocamp" class="form-label">Lambda o Frecuencia</label>&nbsp;&nbsp;
+               <br>
+               <select name="num6" id="num6">
+               <br>
+               <option value="27">Lambda</option><option value="28">Frecuencia</option>
+               </select> 
+               <br><br><br>
+               <label for="mag_asig" class="form-label">magnitud  asignada :</label>
+               <input type="text" class="form-input" id="mag_asig" placeholder="Por favor digite frecuencia">
+               <p class="form-label">X 10 ^</p>
+               <input type="text" name="num_ele4" id="num_ele4" placeholder="Por favor a que numero sera elevadoo">
+
+               <br><br>
+               <input type="submit" name="send"  class="btn-submit"value="GRAFICAR">                      
+      
+            </div>   
+            </aside>
+
+
+    <aside>  
+        <div class="contenedor">
+           <div class="form">
+                <div class="form-header">
+                    <h1 class="form-title">R<samp>esultados</samp></h1>
+                </div>
+                <label for="per" class="form-label" >Periodo(T):<span id="per"></span></label>
+                <br>
+                <label for="frec " class="form-label" >Frecuencia(f):<span id="frec" ></span></label>
+                <br>
+                <label for="LambdaFinal" class="form-label" >Valor de Lambda:<span id="LambdaFinal" ></span></label>
+                <br>
+                <label for="vel_ang" class="form-label">Velocidad Angular(w):<span id="velang"></span></label>
+                <br>    
+                <label for="num_ond" class="form-label" >Número de Onda(k):<span id="numonda"></span></label>
+                <br>  
+                <label for="vel_des " class="form-label" >Velocidad de la luz(c):<span id="vel_des"></span></label>
+                <br>
+                <label for="camp_elec " class="form-label" >Ecuación Campo eléctrico:<span id="camp_elec"></span></label>
+                <br>
+                <label for="camp_mag " class="form-label" >Ecuación Campo Magnético:<span id="camp_mag"></span></label>
+                <br>
+                <label for="ecu_des" class="form-label" >Dirección de propagación de Onda:<span id="ecu_des"></span></label>
+                <br>
+            </form>
+        </div>
+        </div>  
+    </aside>
+    <footer>
+            <div id="grf2"></div> 
+            <div id="grf3"></div> 
+    </footer>
+<script src="logic.js">
+</script>
+</body>
+</html>

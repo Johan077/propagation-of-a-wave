@@ -1,0 +1,202 @@
+*{
+    margin:0;
+    padding:0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+
+    background: url(1.jpg);
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+header{
+    width: 1350px;
+}
+
+footer{
+    width: 1350px;
+}
+
+.contenedor .form .form-header .form-title{
+
+    font-weight:normal;
+    font-family: sans-serif;
+    color: aqua;
+    text-align: center;
+    padding:14px 0;
+}
+
+.contenedor .form .form-header .form-title span{
+
+    color: aqua;    
+}
+
+.contenedor .form{
+
+     background:rgba(155, 244, 247, 0.4);
+     width: 90%;
+     max-width: 650px;
+     margin:auto;
+     padding: 5px 35px;
+     margin-top: 30px;
+     padding-bottom: 30px;
+     border-radius: 3px;
+     
+}
+
+
+.contenedor .form .form-label{
+
+    display: block;
+    color: aqua;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+}
+
+.contenedor .form .btn-submit{
+    
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: aqua;
+    font-size: 16px;
+    border: black;
+    color: azure;
+    cursor:pointer;
+    padding: 20px 0;
+    transition: all .7s ease;
+}
+
+.contenedor .form .btn-submit:hover{
+
+    background:rgba(151, 222, 224, 0.4);
+}
+
+.abste .form .form-header .form-title{
+
+    font-weight:normal;
+    font-family: sans-serif;
+    color: aqua;
+    text-align: center;
+    padding:14px 0;
+}
+
+.abste .form .form-header .form-title span{
+
+    color: aqua;    
+}
+
+.abste .form{
+
+     background:rgba(155, 244, 247, 0.4);
+     width: 90%;
+     max-width: 650px;
+     margin:auto;
+     padding: 5px 35px;
+     margin-top: 30px;
+     padding-bottom: 30px;
+     border-radius: 3px;
+
+}
+
+.abste .form .form-label{
+
+    display: block;
+    color: aqua;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+}
+
+.abste .form .btn-submit{
+    
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: aqua;
+    font-size: 16px;
+    border: black;
+    color: azure;
+    cursor:pointer;
+    padding: 20px 0;
+    transition: all .7s ease;
+}
+
+.abste .form .btn-submit:hover{
+
+    background:rgba(151, 222, 224, 0.4);
+}
+
+aside{
+    font-weight:normal;
+    width: 435px;
+    height: 500px;
+    margin-top: 10px;
+    float: left;
+}
+
+aside .contenedor .form .form-header .form-title{
+
+    font-weight:normal;
+    font-family: sans-serif;
+    color: aqua;
+    text-align: center;
+    padding:14px 0;
+}
+ 
+aside .contenedor .form .form-header .form-title span{
+
+    color: aqua;    
+}
+
+aside .contenedor .form{
+
+     background:rgba(155, 244, 247, 0.4);
+     width: 90%;
+     max-width: 650px;
+     margin:auto;
+     padding: 5px 35px;
+     margin-top: 30px;
+     padding-bottom: 30px;
+     border-radius: 3px;
+
+}
+
+aside .contenedor .form .form-label{
+
+    display: block;
+    color: aqua;
+    font-size: 16px;
+    font-family: Roboto;
+    position: relative;
+}
+
+aside .contenedor .form .btn-submit{
+    
+    width: 100%;
+    font-family: Roboto;
+    outline: none;
+    background: aqua;
+    font-size: 16px;
+    border: black;
+    color: azure;
+    cursor:pointer;
+    padding: 20px 0;
+    transition: all .7s ease;
+}
+
+aside .contenedor .form .btn-submit:hover{
+
+    background:rgba(151, 222, 224, 0.4);
+}
+
+footer{
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
